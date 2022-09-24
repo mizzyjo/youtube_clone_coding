@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 
 const SearchHeader = ({ onSearch }) => {
   const inputRef = useRef();
+  
   const handleSearch = () => {
     const value = inputRef.current.value;
     onSearch(value);
